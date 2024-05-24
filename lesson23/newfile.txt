@@ -1,0 +1,22 @@
+-- Avval jadval yaratish
+CREATE TABLE employees (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    department VARCHAR(100),
+    salary NUMERIC
+);
+
+-- Jadvallarga ma'lumot kiritish
+INSERT INTO employees (name, age, department, salary) VALUES
+('John Doe', 30, 'HR', 50000),
+('Jane Smith', 40, 'Finance', 60000),
+('Alice Johnson', 25, 'IT', 70000),
+('Bob Brown', 35, 'IT', 80000),
+('Charlie Davis', 28, 'HR', 45000),
+('Daisy Evans', 32, 'Finance', 55000),
+('Ethan White', 45, 'Management', 90000),
+('Fiona Green', 50, 'Management', 95000),
+('George King', 27, 'IT', 60000),
+('Hannah Baker', 33, 'Finance', 65000);
+
