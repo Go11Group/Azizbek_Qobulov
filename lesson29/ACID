@@ -1,0 +1,11 @@
+ACID bu operatsiyalar to'plami bo'lib, ma'lumotlar bazalari bilan ishlashda ishonchlilikni va ma'lumotlarning yaxlitligini ta'minlash uchun qo'llaniladi. ACID quyidagi to'rt prinsipdan iborat:
+
+Atomlik (Atomicity): Atomlik tamoyiliga ko'ra, har qanday operatsiya to'liq bajarilishi yoki umuman bajarilmasligi kerak. Agar operatsiya muvaffaqiyatli bajarilmasa, barcha o'zgartirishlar bekor qilinadi, ya'ni ma'lumotlar bazasi oldingi holatiga qaytariladi.
+
+Izolyatsiya (Consistency): Izolyatsiya tamoyili shuni ta'kidlaydiki, operatsiya bajarilgandan so'ng ma'lumotlar bazasi izchil holatda qolishi kerak. Bu, har bir operatsiya ma'lumotlar bazasini valid holatda qoldirishini anglatadi, ya'ni ma'lumotlar bazasi ma'lum bir qoidalar to'plamiga mos kelishini ta'minlaydi.
+
+Izolatsiya (Isolation): Izolatsiya tamoyiliga ko'ra, bir vaqtning o'zida bajarilayotgan operatsiyalar bir-biriga xalaqit bermasligi kerak. Har bir operatsiya mustaqil ravishda amalga oshiriladi, go'yo u yagona operatsiya sifatida bajarilgandek.
+
+Davomiylik (Durability): Davomiylik tamoyiliga ko'ra, operatsiya muvaffaqiyatli yakunlangandan so'ng, o'zgarishlar doimiy ravishda saqlanib qolishi kerak. Hatto tizim nosozligi yoki uzilishi sodir bo'lganda ham, ushbu o'zgarishlar yo'qolmasligi kerak.
+
+ACID prinsiplari, ma'lumotlar bazalarida tranzaktsiyalarni ishonchli va xavfsiz amalga oshirish uchun muhim
