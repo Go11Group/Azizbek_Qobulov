@@ -1,0 +1,5 @@
+Faker package dan foydalanib siklda 1 millionta fake data joylandi va indexsiz xolatida select qilinganda qidirish juda sekin chiqdi.
+Btree index users table ni id siga qo'shilganida, id bo'yicha qidirish 0.066 ga kamaydi
+BRIN indekslari Btree yoki xesh indekslari kabi boshqa indekslash usullariga nisbatan ancha kam joy talab qiladi.
+BRIN indeksini yaratish boshqa indeks turlarini yaratishdan tezroq ekan
+"using brin" buyrugi orqali index query yaratiladi
