@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package model
 
 type Student struct {
@@ -6,3 +7,14 @@ type Student struct {
 	Phone string `json:"phone"`
 	Email string `json:"email"`
 }
+=======
+package model
+
+type Student struct {
+	ID         int
+	Name       string
+	Birth_year int
+	Email      string
+	Phone      string
+}
+>>>>>>> origin/main

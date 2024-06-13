@@ -1,0 +1,24 @@
+GET metodi serverdan resurs yoki ma'lumot olish uchun ishlatiladi. Bu metod ma'lumot olish uchun ishlatiladi va hech qanday ma'lumotni o'zgartirmaydi.
+
+Vazifasi: Serverdan ma'lumot olish (masalan, web sahifa yoki API ma'lumotlari).
+Misol: GET /api/users?id=123 — Bu so'rov bilan id=123 bo'lgan foydalanuvchi haqida ma'lumot so'raladi.
+
+POST metodi serverga yangi ma'lumot yuborish yoki mavjud resursni o'zgartirish uchun ishlatiladi. Bu metod ma'lumot yuborish va o'zgartirish uchun ishlatiladi.
+
+Vazifasi: Yangi resurs yaratish yoki serverga ma'lumot yuborish (masalan, yangi foydalanuvchi yaratish yoki formani jo'natish).
+Misol: POST /api/users — Yangi foydalanuvchi yaratish uchun ma'lumot yuboriladi.
+
+PUT metodi mavjud resursni yangilash yoki o'zgartirish uchun ishlatiladi. Bu metod odatda resursni to'liq yangilaydi.
+
+Vazifasi: Mavjud resursni yangilash yoki almashtirish (masalan, foydalanuvchi ma'lumotlarini yangilash).
+Misol: PUT /api/users/123 — id=123 bo'lgan foydalanuvchining ma'lumotlarini yangilash uchun ma'lumot yuboriladi.
+
+DELETE metodi serverdan resursni o'chirish uchun ishlatiladi. Bu metod resursni butunlay o'chirish uchun ishlatiladi.
+
+Vazifasi: Serverdagi mavjud resursni o'chirish (masalan, foydalanuvchini o'chirish).
+Misol: DELETE /api/users/123 — id=123 bo'lgan foydalanuvchini o'chirish uchun so'rov yuboriladi.
+
+GET: Ma'lumot olish uchun.
+POST: Yangi ma'lumot jo'natish yoki resurs yaratish uchun.
+PUT: Mavjud resursni yangilash yoki almashtirish uchun.
+DELETE: Mavjud resursni o'chirish uchun.

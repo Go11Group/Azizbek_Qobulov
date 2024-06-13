@@ -5,6 +5,7 @@ go 1.22.4
 require github.com/lib/pq v1.10.9
 
 require github.com/gorilla/mux v1.8.1
+<<<<<<< HEAD
 
 require (
 	github.com/bytedance/sonic v1.11.8 // indirect
@@ -35,3 +36,5 @@ require (
 	google.golang.org/protobuf v1.34.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+=======
+>>>>>>> origin/main

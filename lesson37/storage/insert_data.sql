@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 -- Create the 'persons' table
 CREATE TABLE persons (
     id SERIAL PRIMARY KEY,
@@ -61,3 +62,68 @@ INSERT INTO persons (first_name, last_name, age, gender, nation, field, parent_n
 ('Aurora', 'Morris', 24, 'Female', 'Mexico', 'Finance', 'Carol Morris', 'Monterrey'),
 ('Eleanor', 'Rogers', 30, 'Female', 'UK', 'Law', 'Scott Rogers', 'Liverpool'),
 ('Hannah', 'Reed', 33, 'Female', 'South Africa', 'Science', 'Kimberly Reed', 'Johannesburg');
+=======
+-- Create the 'persons' table
+CREATE TABLE persons (
+    id SERIAL PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    age INT,
+    gender VARCHAR(10),
+    nation VARCHAR(50),
+    field VARCHAR(50),
+    parent_name VARCHAR(100),
+    city VARCHAR(50)
+);
+
+-- Insert 50 records into the 'persons' table
+INSERT INTO persons (first_name, last_name, age, gender, nation, field, parent_name, city) VALUES
+('John', 'Doe', 28, 'Male', 'USA', 'Engineering', 'Jane Doe', 'New York'),
+('Jane', 'Smith', 34, 'Female', 'Canada', 'Medicine', 'Robert Smith', 'Toronto'),
+('Michael', 'Johnson', 22, 'Male', 'USA', 'Arts', 'Linda Johnson', 'Los Angeles'),
+('Emily', 'Davis', 29, 'Female', 'UK', 'Law', 'Richard Davis', 'London'),
+('Chris', 'Brown', 32, 'Male', 'Australia', 'Sports', 'Sandra Brown', 'Sydney'),
+('Sarah', 'Wilson', 27, 'Female', 'New Zealand', 'Science', 'Paul Wilson', 'Auckland'),
+('David', 'Lee', 31, 'Male', 'Singapore', 'Technology', 'Susan Lee', 'Singapore'),
+('Laura', 'White', 26, 'Female', 'Ireland', 'Education', 'John White', 'Dublin'),
+('Daniel', 'Harris', 35, 'Male', 'USA', 'Finance', 'Laura Harris', 'Chicago'),
+('Emma', 'Clark', 30, 'Female', 'Canada', 'Politics', 'James Clark', 'Vancouver'),
+('Joshua', 'Martinez', 24, 'Male', 'Mexico', 'Arts', 'Maria Martinez', 'Mexico City'),
+('Sophia', 'Garcia', 33, 'Female', 'Spain', 'Business', 'Juan Garcia', 'Madrid'),
+('Matthew', 'Martinez', 25, 'Male', 'USA', 'Engineering', 'Karen Martinez', 'San Francisco'),
+('Olivia', 'Anderson', 28, 'Female', 'Sweden', 'Health', 'Michael Anderson', 'Stockholm'),
+('Ethan', 'Taylor', 23, 'Male', 'UK', 'Law', 'Patricia Taylor', 'Birmingham'),
+('Isabella', 'Moore', 29, 'Female', 'Italy', 'Fashion', 'William Moore', 'Milan'),
+('Lucas', 'Jackson', 31, 'Male', 'Germany', 'Technology', 'Elizabeth Jackson', 'Berlin'),
+('Mia', 'Thompson', 27, 'Female', 'France', 'Literature', 'Charles Thompson', 'Paris'),
+('Alexander', 'White', 32, 'Male', 'South Africa', 'Science', 'Margaret White', 'Cape Town'),
+('Ava', 'Martinez', 26, 'Female', 'Brazil', 'Education', 'Robert Martinez', 'Rio de Janeiro'),
+('James', 'Rodriguez', 34, 'Male', 'Colombia', 'Sports', 'Anna Rodriguez', 'Bogotá'),
+('Charlotte', 'Lewis', 28, 'Female', 'Australia', 'Arts', 'George Lewis', 'Melbourne'),
+('Benjamin', 'Walker', 30, 'Male', 'New Zealand', 'Business', 'Catherine Walker', 'Wellington'),
+('Amelia', 'Hall', 27, 'Female', 'USA', 'Engineering', 'Henry Hall', 'Boston'),
+('Jacob', 'Allen', 29, 'Male', 'Canada', 'Finance', 'Sarah Allen', 'Calgary'),
+('Mason', 'Young', 25, 'Male', 'UK', 'Law', 'Barbara Young', 'Manchester'),
+('Liam', 'King', 31, 'Male', 'Australia', 'Technology', 'Dorothy King', 'Brisbane'),
+('Emily', 'Scott', 23, 'Female', 'USA', 'Science', 'Helen Scott', 'Seattle'),
+('Logan', 'Green', 32, 'Male', 'Ireland', 'Politics', 'Thomas Green', 'Cork'),
+('Lucas', 'Baker', 28, 'Male', 'South Africa', 'Education', 'Nancy Baker', 'Durban'),
+('Oliver', 'Gonzalez', 24, 'Male', 'Spain', 'Engineering', 'Amy Gonzalez', 'Barcelona'),
+('Elijah', 'Nelson', 29, 'Male', 'Mexico', 'Health', 'Bruce Nelson', 'Guadalajara'),
+('Mia', 'Carter', 27, 'Female', 'USA', 'Arts', 'Martin Carter', 'Houston'),
+('Sebastian', 'Mitchell', 31, 'Male', 'Canada', 'Business', 'Jessica Mitchell', 'Montreal'),
+('Emma', 'Perez', 26, 'Female', 'Colombia', 'Law', 'David Perez', 'Medellín'),
+('Sophia', 'Roberts', 28, 'Female', 'Australia', 'Fashion', 'Edward Roberts', 'Perth'),
+('Harper', 'Turner', 30, 'Female', 'UK', 'Literature', 'Rebecca Turner', 'Edinburgh'),
+('Evelyn', 'Phillips', 33, 'Female', 'France', 'Science', 'Anthony Phillips', 'Lyon'),
+('Aiden', 'Campbell', 34, 'Male', 'Germany', 'Politics', 'Christine Campbell', 'Frankfurt'),
+('Lily', 'Parker', 25, 'Female', 'Sweden', 'Education', 'Jonathan Parker', 'Gothenburg'),
+('Aria', 'Evans', 27, 'Female', 'Italy', 'Engineering', 'Stephen Evans', 'Rome'),
+('Ellie', 'Edwards', 29, 'Female', 'Brazil', 'Health', 'Andrew Edwards', 'São Paulo'),
+('Zoe', 'Collins', 31, 'Female', 'Ireland', 'Business', 'Brian Collins', 'Galway'),
+('Sofia', 'Stewart', 28, 'Female', 'USA', 'Technology', 'Margaret Stewart', 'Las Vegas'),
+('Mila', 'Sanchez', 26, 'Female', 'Spain', 'Literature', 'Paul Sanchez', 'Seville'),
+('Aurora', 'Morris', 24, 'Female', 'Mexico', 'Finance', 'Carol Morris', 'Monterrey'),
+('Eleanor', 'Rogers', 30, 'Female', 'UK', 'Law', 'Scott Rogers', 'Liverpool'),
+('Hannah', 'Reed', 33, 'Female', 'South Africa', 'Science', 'Kimberly Reed', 'Johannesburg');
+>>>>>>> origin/main
