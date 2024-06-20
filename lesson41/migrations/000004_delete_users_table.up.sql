@@ -1,0 +1,1 @@
+DELETE FROM Phones WHERE Model = 'OnePlus 8T'

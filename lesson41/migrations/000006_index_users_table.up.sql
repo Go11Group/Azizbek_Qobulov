@@ -1,0 +1,1 @@
+CREATE INDEX idx_model ON Phones (Model);

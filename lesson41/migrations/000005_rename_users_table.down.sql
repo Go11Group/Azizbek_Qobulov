@@ -1,0 +1,2 @@
+ALTER TABLE Phones
+RENAME COLUMN Storage TO Memory;

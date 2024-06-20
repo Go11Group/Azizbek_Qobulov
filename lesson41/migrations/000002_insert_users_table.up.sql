@@ -1,0 +1,10 @@
+INSERT INTO Phones (Model, Color, Memory, Price) VALUES ('iPhone 12', 'Black', 64, 799);
+INSERT INTO Phones (Model, Color, Memory, Price) VALUES ('Samsung Galaxy S21', 'White', 128, 999);
+INSERT INTO Phones (Model, Color, Memory, Price) VALUES ('Google Pixel 5', 'Green', 128, 699);
+INSERT INTO Phones (Model, Color, Memory, Price) VALUES ('OnePlus 8T', 'Blue', 256, 749);
+INSERT INTO Phones (Model, Color, Memory, Price) VALUES ('Xiaomi Mi 11', 'Gray', 256, 799);
+INSERT INTO Phones (Model, Color, Memory, Price) VALUES ('Sony Xperia 1 II', 'Purple', 128, 1199);
+INSERT INTO Phones (Model, Color, Memory, Price) VALUES ('Huawei P40 Pro', 'Silver', 256, 1099);
+INSERT INTO Phones (Model, Color, Memory, Price) VALUES ('LG V60 ThinQ', 'Blue', 128, 899);
+INSERT INTO Phones (Model, Color, Memory, Price) VALUES ('Asus ROG Phone 5', 'Black', 512, 999);
+INSERT INTO Phones (Model, Color, Memory, Price) VALUES ('Nokia 8.3 5G', 'Polar Night', 64, 649);
