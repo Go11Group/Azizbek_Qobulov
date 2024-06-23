@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-// ReplaceQueryParams SQL so'rovidagi nomlangan parametrlarni tegishli to'ldiruvchilar bilan almashtiradi 
+// ReplaceQueryParams SQL so'rovidagi nomlangan parametrlarni tegishli to'ldiruvchilar bilan almashtiradi
 // va o'zgartirilgan so'rov va argumentlar ro'yxatini qaytaradi.
 func ReplaceQueryParams(query string, params map[string]interface{}) (string, []interface{}) {
 	args := make([]interface{}, 0, len(params))

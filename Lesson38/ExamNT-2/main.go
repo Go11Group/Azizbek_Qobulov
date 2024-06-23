@@ -6,13 +6,14 @@ import (
 )
 
 func main() {
-	db, err := postgres.ConnectDB()
+	db, err := postgres.ConnectDB()    // Connecting to PostgreSQL database
 	if err != nil {
 		panic(err)
 	}
 
-	defer db.Close()
-	handler := handler.NewHandler(db)
+	defer db.Close()                  // Defer closing the database connection after main function exits
 
-	handler.SetupRoutes()
+	handler := handler.NewHandler(db) // Creating a new handler with the database connection
+
+	handler.SetupRoutes()             // Setting up HTTP routes for handling requests
 }

@@ -28,15 +28,15 @@ func NewHandler(db *sql.DB) *Handler {
 func (h *Handler) SetupRoutes() {
 	r := gin.Default()
 
-	r.POST("/user/create", h.CreateUser)
-	r.GET("/user", h.GetAllUsers)
-	r.GET("/user/get/:id", h.GetUser)
-	r.PUT("/user/update", h.UpdateUser)
-	r.DELETE("/user/delete/:id", h.DeleteUser)
+	r.POST("/users/create", h.CreateUser)
+	r.GET("/users", h.GetAllUsers)
+	r.GET("/users/:id", h.GetUser)
+	r.PUT("/users/update", h.UpdateUser)
+	r.DELETE("/users/delete/:id", h.DeleteUser)
 
 	r.POST("/course/create", h.CreateCourse)
 	r.GET("/course", h.GetAllCourses)
-	r.GET("/course/get/:id", h.GetCourse)
+	r.GET("/course/:id", h.GetCourse)
 	r.PUT("/course/update", h.UpdateCourse)
 	r.DELETE("/course/delete/:id", h.DeleteCourse)
 
@@ -44,12 +44,19 @@ func (h *Handler) SetupRoutes() {
 	r.GET("/lessons", h.GetAllLessons)
 	r.GET("/lessons/:id", h.GetLessonByID)
 	r.PUT("/lessons/update", h.UpdateLesson)
-	r.DELETE("/lessons/:id", h.DeleteLesson)
+	r.DELETE("/lessons/delete/:id", h.DeleteLesson)
 
 	r.POST("/enrollments/enroll", h.EnrollUser)
 	r.GET("/enrollments", h.GetAllEnrollments)
 	r.GET("/enrollments/:id", h.GetEnrollmentByID)
-	r.DELETE("/enrollments/:id", h.DeleteEnrollment)
+	r.PUT("/enrollments/update", h.UpdateEnrollment)
+	r.DELETE("/enrollments/delete/:id", h.DeleteEnrollment)
 
-	r.Run(":7070")
+	r.GET("/users/:id/courses", h.GetCoursesByUser)
+	r.GET("/users/search", h.SearchUsers)
+	r.GET("/courses/:id/lessons", h.GetLessonsByCourse)
+	r.GET("/courses/:id/enrollments", h.GetEnrolledUsersByCourse)
+	r.GET("/courses/popular", h.GetPopularCourses)
+
+	r.Run(":8080")
 }
