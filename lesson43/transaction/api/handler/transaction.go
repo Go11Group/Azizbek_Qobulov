@@ -2,21 +2,21 @@ package handler
 
 import (
 	"fmt"
-	"user_service/models"
+	"transaction/models"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
 
-func (h *handler) CreateUser(ctx *gin.Context) {
-	var usr models.User
-	err := ctx.ShouldBindJSON(&usr)
+func (h *handler) CreateTransaction(ctx *gin.Context) {
+	var transaction models.Transaction
+	err := ctx.ShouldBindJSON(&transaction)
 	if err != nil {
 		ctx.JSON(http.StatusBadRequest, err.Error())
 		fmt.Println("error:", err.Error())
 		return
 	}
 
-	err = h.User.Create(&usr)
+	err = h.Transaction.Create(&transaction)
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, err.Error())
 		fmt.Println("error:", err.Error())
@@ -26,30 +26,30 @@ func (h *handler) CreateUser(ctx *gin.Context) {
 	ctx.JSON(http.StatusCreated, "OKAY")
 }
 
-func (h *handler) GetUserById(ctx *gin.Context) {
+func (h *handler) GetTransactionById(ctx *gin.Context) {
 	id := ctx.Param("id")
 
-	user, err := h.User.GetById(id)
+	transaction, err := h.Transaction.GetById(id)
 	if err != nil {
 		ctx.JSON(http.StatusNotFound, err.Error())
 		fmt.Println("error:", err.Error())
 		return
 	}
 
-	ctx.JSON(http.StatusOK, user)
+	ctx.JSON(http.StatusOK, transaction)
 }
 
-func (h *handler) UpdateUser(ctx *gin.Context) {
+func (h *handler) UpdateTransaction(ctx *gin.Context) {
 	id := ctx.Param("id")
-	var usr models.User
-	err := ctx.ShouldBindJSON(&usr)
+	var transaction models.Transaction
+	err := ctx.ShouldBindJSON(&transaction)
 	if err != nil {
 		ctx.JSON(http.StatusBadRequest, err.Error())
 		fmt.Println("error:", err.Error())
 		return
 	}
 
-	err = h.User.Update(id, &usr)
+	err = h.Transaction.Update(id, &transaction)
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, err.Error())
 		fmt.Println("error:", err.Error())
@@ -59,10 +59,10 @@ func (h *handler) UpdateUser(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, "UPDATED")
 }
 
-func (h *handler) DeleteUser(ctx *gin.Context) {
+func (h *handler) DeleteTransaction(ctx *gin.Context) {
 	id := ctx.Param("id")
 
-	err := h.User.Delete(id)
+	err := h.Transaction.Delete(id)
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, err.Error())
 		fmt.Println("error:", err.Error())
