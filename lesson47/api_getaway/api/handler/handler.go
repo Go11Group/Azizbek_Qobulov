@@ -1,24 +1,15 @@
 package handler
 
 import (
-	genproto "WeatherAndBusService/server/genproto/BusService"
-	pb "WeatherAndBusService/server/genproto/WeatherService"
-	"context"
+	pb "api/genproto/BusService"
+	pw "api/genproto/WeatherService"
 )
 
 type Handler struct {
-	Weather   genproto.WeatherServiceClient
-	Transport genproto.TransportServiceClient
+	Weather   pw.WeatherServiceClient
+	Transport pb.TransportServiceClient
 }
 
-func NewHandler(transport genproto.TransportServiceClient, weather genproto.WeatherServiceClient) *Handler {
+func NewHandler(transport pb.TransportServiceClient, weather pw.WeatherServiceClient) *Handler {
 	return &Handler{Transport: transport, Weather: weather}
-}
-
-func (h *Handler) GetWeather(ctx context.Context, req *pb.WeatherRequest) (*pb.WeatherResponse, error) {
-	return &pb.WeatherResponse{
-		Temperature: 25.5,
-		Wet:         60,
-		WindSpeed:   15,
-	}, nil
 }
