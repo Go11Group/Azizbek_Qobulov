@@ -1,0 +1,6 @@
+p, teacher, /student, GET
+p, teacher, /student, POST
+p, teacher, /student, PUT
+p, teacher, /student, DELETE
+
+p, student, /student, GET
